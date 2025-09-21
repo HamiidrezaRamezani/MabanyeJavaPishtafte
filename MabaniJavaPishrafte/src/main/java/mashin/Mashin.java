@@ -1,49 +1,53 @@
+package mashin;
+
 import static java.lang.System.out;
 
-class Mashin {
+public class Mashin {
+
+    // Don't repeat yourself
 
     // constructure
     Mashin() {
-        out.println("Yek Mashin bdeone dade sakhte shod");
+        out.println("Yek mashin.Mashin bdeone dade sakhte shod");
     }
 
-    Mashin(String mark) {
+    public Mashin(String mark) {
         this.mark = mark;
     }
 
-    boolean ayaMashinRoshanAst;
-    boolean ayaDarMashinBazAst;
+    boolean ayaRoshanAst;
+    boolean ayaDarBazAst;
     double toul;
     double arz;
     String mark;
 
-    void roshan() {
-        out.println("Mashin roshan ast");
-        ayaMashinRoshanAst = true;
+    public void roshan() {
+        out.println("mashin.Mashin roshan ast");
+        ayaRoshanAst = true;
     }
 
     void khamoush() {
-        out.println("Mashin khamoush ast");
-        ayaMashinRoshanAst = false;
+        out.println("mashin.Mashin khamoush ast");
+        ayaRoshanAst = false;
     }
 
     void bazKardanDar() {
         out.println("Dar Baz ast");
-        ayaDarMashinBazAst = true;
+        ayaDarBazAst = true;
     }
 
     void bastanDar() {
         out.println("Dar Baste shod");
-        ayaDarMashinBazAst = false;
+        ayaDarBazAst = false;
     }
 
 
-    boolean ayaMashinDarHarekatAst() {
-        if (!ayaDarMashinBazAst && ayaMashinRoshanAst) {
+    public boolean ayaDarHarekatAst() {
+        if (!ayaDarBazAst && ayaRoshanAst) {
             out.println("MashinDarHaleHarekatAst");
             return true;
         } else {
-            out.println("Mashin Park ast");
+            out.println("mashin.Mashin Park ast");
             return false;
         }
     }
