@@ -2,25 +2,14 @@ package mashin;
 
 import static java.lang.System.out;
 
-public class Motor {
+public class Motor extends Khodro {
 
-    boolean ayaRoshanAst;
-
-
-
-    public void roshan() {
-        out.println("mashin.Mashin roshan ast");
-        ayaRoshanAst = true;
-    }
-
-
-    void khamoush() {
-        out.println("mashin.Mashin khamoush ast");
-        ayaRoshanAst = false;
-    }
 
     public boolean ayaDarHarekatAst() {
         return ayaRoshanAst;
     }
 
 }
+
+
+// Motor yek Khodro ast : MotorCycle is a vehicle

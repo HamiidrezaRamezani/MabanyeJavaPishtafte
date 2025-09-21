@@ -2,7 +2,7 @@ package mashin;
 
 import static java.lang.System.out;
 
-public class Mashin {
+public class Mashin extends Khodro{
 
     // Don't repeat yourself
 
@@ -15,21 +15,11 @@ public class Mashin {
         this.mark = mark;
     }
 
-    boolean ayaRoshanAst;
     boolean ayaDarBazAst;
     double toul;
     double arz;
     String mark;
 
-    public void roshan() {
-        out.println("mashin.Mashin roshan ast");
-        ayaRoshanAst = true;
-    }
-
-    void khamoush() {
-        out.println("mashin.Mashin khamoush ast");
-        ayaRoshanAst = false;
-    }
 
     void bazKardanDar() {
         out.println("Dar Baz ast");
