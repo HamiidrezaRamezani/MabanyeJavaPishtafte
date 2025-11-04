@@ -1,6 +1,8 @@
 package org.khodro;
 
-public class Mashin {
+
+// Mashin yek khodro ast : Car is a Vehicle
+public class Mashin extends Khodoro{
 
 
         public Mashin(String mark){
@@ -8,17 +10,8 @@ public class Mashin {
         }
 
         //Variables
-        boolean ayaRoshanAst;
         public boolean ayaDarBazAst;
         String mark;
-
-        public void roshan(){
-            ayaRoshanAst = true;
-        }
-
-        void khamosh(){
-            ayaRoshanAst = false;
-        }
 
         void bazKardanDar(){
             ayaDarBazAst = true;
