@@ -10,14 +10,14 @@ public class Mashin extends Khodoro{
         }
 
         //Variables
-        public boolean ayaDarBazAst;
+        boolean ayaDarBazAst;
         String mark;
 
         void bazKardanDar(){
             ayaDarBazAst = true;
         }
 
-        public void bastanDar(){
+        void bastanDar(){
             ayaDarBazAst = false;
         }
 
